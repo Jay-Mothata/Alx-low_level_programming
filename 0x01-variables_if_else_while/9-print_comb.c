@@ -8,17 +8,17 @@
 
 int main(void)
 {
-	int rints all possible combinations of single-digit numbers.i;
+	int i;
 
 	for (i = 0; i < 10; i++)
 	{
-		if (i == 9)
-			printf(i + '0')
-		else
-		{	putchar(i + '0');
+		putchar(i + '0');
+		if (i != 9)
+		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
+	putchar('\n');
 	return (0);
 }
