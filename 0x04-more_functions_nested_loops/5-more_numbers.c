@@ -2,6 +2,7 @@
 
 /**
  * more_numbers - print numbers from 0 to 14
+ * 
  *
  * Return: void
  */
@@ -14,7 +15,7 @@ void more_numbers(void)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			_putchar(j + '0')
+			_putchar(j + '0');
 		}
 		_putchar('\n');
 	}
