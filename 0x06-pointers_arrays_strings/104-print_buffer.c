@@ -21,12 +21,12 @@ void print_buffer(char *b, int size)
 
 	for (i = 0; i < size; i += 10)
 	{
-		printf("%08x: ");
+		printf("%08x: ", i);
 
 		for (j = 0; j < 10; j++)
 		{
 			if (i + j < size)
-				printf("%02x", b[i + j]);
+				printf("%02x", (unsigned char)b[i + j]);
 			else
 				printf("  ");
 
@@ -38,8 +38,8 @@ void print_buffer(char *b, int size)
 		{
 			if (i + j < size)
 			{
-				if (isprint(b[i + j]))
-					printf("%c", b[i + j]);
+				if (isprint((unsigned char)b[i + j]))
+					printf("%c", (unsigned char)b[i + j]);
 				else
 					printf(".");
 			}
