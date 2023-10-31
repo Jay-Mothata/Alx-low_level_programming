@@ -16,15 +16,17 @@ char *_strdup(char *str)
 	char *aaa;
 	int i, r = 0;
 
-	if (str == NULL)
+	if (str == NULL) /* Check if str = NULL */
 		return (NULL);
 
 	i = 0;
 	while (str[i] != '\0')
 		i++;
 
+	/* Allocate memory for the new string */
 	aaa = malloc(sizeof(char) * (i + 1));
 
+	/* If malloc fails, return NULL */
 	if (aaa == NULL)
 		return (NULL);
 
