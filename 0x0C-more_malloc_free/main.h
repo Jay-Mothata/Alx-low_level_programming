@@ -9,7 +9,5 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _putchar(char c);
 int is_digits(char *s);
 int main(int argc, char *argv[]);
-void errors(void);
-int _strlen(char *s)
 
 #endif
