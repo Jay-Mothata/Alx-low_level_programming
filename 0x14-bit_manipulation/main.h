@@ -1,8 +1,8 @@
 #ifndef MAIN_H
-#define MAIN_H 
+#define MAIN_H
 
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 /* Function Protypes */
 int _putchar (char c);
